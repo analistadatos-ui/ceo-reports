@@ -26,6 +26,8 @@ Rules:
 | Production for one customer | `/reports/customer-production` |
 | Planned load per line / blocked days | `/reports/plan-load` |
 | Pending cut requests and close approvals | `/reports/pending-approvals` |
+| Planning: SAM compliance (production SAM must be lower than merchant SAM), by style, line or order | `/reports/sam-compliance` (`grain=style\|line\|order`) |
+| Planning: will orders be delivered on time? Plan finish vs merchant delivery date, orders without a plan | `/reports/delivery-plan` |
 | Cutting: stages, pieces, sizes, markers | `/api/cut-orders/analytics` (+ `/breakdown?id=`) |
 | Finished-goods warehouse: received vs assigned vs produced | `/api/finished-warehouse/analytics` (+ `/breakdown?workOrder=`) |
 | Merchants: POs created, planning, produced | `/api/merchant/analytics` |
